@@ -6,6 +6,7 @@ import com.druth.event_ticketing.domain.UpdateEventRequest;
 import com.druth.event_ticketing.domain.UpdateTicketTypeRequest;
 import com.druth.event_ticketing.domain.dtos.*;
 import com.druth.event_ticketing.domain.entities.Event;
+import com.druth.event_ticketing.domain.entities.Ticket;
 import com.druth.event_ticketing.domain.entities.TicketType;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
@@ -38,5 +39,6 @@ public interface EventMapper {
 
     GetPublishedEventDetailsTicketTypeResponseDto toListGetPublishedEventTDetailsTicketTypeResponse(TicketType ticketType);
     GetPublishedEventDetailsResponseDto toGetPublishedEventDetailsResponseDto(Event event);
+
 
 }
